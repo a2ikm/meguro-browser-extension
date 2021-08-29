@@ -13,5 +13,7 @@
     "128": "logo192.png"
   },
   "content_security_policy": "script-src 'self' 'sha256-GgRxr...'; object-src 'self'",
-  "permissions": []
+  "permissions": [
+    "activeTab"
+  ]
 }
