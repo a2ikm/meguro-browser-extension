@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      <form action="https://desolate-harbor-23973.herokuapp.com/_/add" method="POST">
+      <form action={`${process.env.REACT_APP_MEGURO_URL}/_/add`} method="POST">
         <input type="text" name="title" id="form-title" />
         <input type="url" name="url" id="form-url" />
         <input type="text" name="tags" id="form-tags" />
