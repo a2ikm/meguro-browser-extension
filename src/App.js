@@ -57,11 +57,21 @@ function App() {
   return (
     <div className="App">
       <form onSubmit={handleSubmit}>
-        <input type="text" name="title" value={title} onChange={handleTitleChange} />
-        <input type="url" name="url" value={url} onChange={handleURLChange} />
-        <input type="text" name="tags" value={tags} onChange={handleTagsChange} />
-        <textarea name="comment" value={comment} onChange={handleCommentChange}></textarea>
-        <input type="submit" value="Add" />
+        <div className="input">
+          <input type="url" name="url" value={url} onChange={handleURLChange} placeholder="URL" />
+        </div>
+        <div className="input">
+          <input type="text" name="title" value={title} onChange={handleTitleChange} placeholder="Title" />
+        </div>
+        <div className="input">
+          <input type="text" name="tags" value={tags} onChange={handleTagsChange} placeholder="Tags" />
+        </div>
+        <div className="input">
+          <textarea name="comment" value={comment} onChange={handleCommentChange}></textarea>
+        </div>
+        <div className="input">
+          <input type="submit" value="Add" />
+        </div>
       </form>
     </div>
   );

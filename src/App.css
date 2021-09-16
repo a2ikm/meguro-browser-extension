@@ -1,5 +1,20 @@
 .App {
   text-align: center;
+  padding: 4px;
+}
+
+.App input[type=text], .App input[type=url] {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.App textarea {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.App .input + .input {
+  margin-top: 2px;
 }
 
 .App-logo {
