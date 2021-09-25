@@ -21,7 +21,7 @@ function App() {
   const handleSubmit = (event) => {
     event.preventDefault()
 
-    fetch(`${process.env.REACT_APP_MEGURO_URL}/_/add`, {
+    fetch(`${process.env.REACT_APP_MEGURO_URL}/_/api/add`, {
       method: "POST",
       cache: "no-cache",
       headers: {
